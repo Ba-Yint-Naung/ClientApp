@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RequestFragment">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_marginTop="@dimen/padding_10"
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <FrameLayout
+               android:id="@+id/container1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <ImageView
+               android:layout_gravity="center"
+               android:src="@drawable/request"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+           <TextView
+               style="@style/TextViewStyle"
+               android:text="Movie or Serie Name"
+               android:padding="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"/>
+           <EditText
+               style="@style/TextStyle"
+               android:id="@+id/edtname"
+               android:paddingLeft="10dp"
+               android:background="@drawable/edtbg"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:hint="Movie or Serie Name"/>
+           <TextView
+               style="@style/TextViewStyle"
+               android:text="Movie or Serie Link"
+               android:padding="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"/>
+           <EditText
+               style="@style/TextStyle"
+               android:id="@+id/edtimage"
+               android:paddingLeft="10dp"
+               android:background="@drawable/edtbg"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:hint="Movie or Serie Link"/>
+           <LinearLayout
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <Button
+                   android:id="@+id/btnsave"
+                   android:layout_margin="@dimen/padding_10"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:padding="@dimen/padding_20"
+                   android:layout_weight="1"
+                   android:text="Request"
+                   android:background="@color/infoColor"
+                   android:textColor="@color/color_white_gray"
+                   android:drawableTint="@color/color_white_gray"/>
+               <Button
+                   android:id="@+id/btncancel"
+                   android:layout_margin="@dimen/padding_10"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:padding="@dimen/padding_20"
+                   android:layout_weight="1"
+                   android:text="Cancel"
+                   android:background="@color/errorColor"
+                   android:textColor="@color/color_white_gray"
+                   android:drawableTint="@color/color_white_gray"/>
+           </LinearLayout>
+           <FrameLayout
+               android:id="@+id/container2"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+       </LinearLayout>
+   </ScrollView>
+
+</FrameLayout>

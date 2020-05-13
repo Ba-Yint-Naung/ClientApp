@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Movie App</string>
+    <string name="openDrawer">Open Drawer</string>
+    <string name="closeDrawer">Clsoe Drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="all_str">All</string>
+    <string name="request_ref">requests</string>
+
+    <!-- Test Ads -->
+    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="banner_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="native_unit_id">	ca-app-pub-3940256099942544/2247696110</string>
+    <string name="rewarded_unit_id">ca-app-pub-3940256099942544/5224354917</string>
+
+</resources>

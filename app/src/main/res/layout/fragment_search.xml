@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_margin="@dimen/padding_20"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <FrameLayout
+                android:layout_alignParentTop="true"
+                android:id="@+id/container1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:paddingLeft="@dimen/padding_10"
+                android:hint="Search By Name"
+                android:layout_marginTop="@dimen/padding_10"
+                android:layout_below="@id/container1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/search"
+                android:drawableRight="@drawable/ic_search"
+                android:drawableTint="@color/colorPink"
+                android:background="@drawable/edtbg"/>
+            <TextView
+                android:id="@+id/txtmovie"
+                android:layout_below="@id/search"
+                style="@style/TitleStyle"
+                android:text="Search Movies : "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/allmovies"
+                android:layout_below="@+id/txtmovie"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_item_height"/>
+            <TextView
+                android:id="@+id/txtseries"
+                android:layout_below="@id/allmovies"
+                style="@style/TitleStyle"
+                android:text="Search Series : "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/allseries"
+                android:layout_below="@+id/txtseries"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_item_height"/>
+            <FrameLayout
+                android:layout_marginTop="@dimen/padding_10"
+                android:id="@+id/container2"
+                android:layout_marginBottom="@dimen/padding_10"
+                android:layout_below="@id/allseries"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.synnapps.carouselview.CarouselView
+                android:id="@+id/carouselView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:fillColor="@color/colorAccent"
+                app:pageColor="#00000000"
+                app:radius="6dp"
+                app:slideInterval="3000"
+                app:strokeColor="@color/colorPink"
+                app:strokeWidth="1dp"/>
+            <TextView
+                android:id="@+id/txtcategory"
+                android:layout_below="@id/carouselView"
+                style="@style/TitleStyle"
+                android:text="All Category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/allcategory"
+                android:layout_below="@+id/txtcategory"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/category_item_height"/>
+
+           <FrameLayout
+               android:layout_below="@id/allcategory"
+               android:id="@+id/adcontainer"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+           </FrameLayout>
+
+            <TextView
+                android:id="@+id/txtmovie"
+                android:layout_below="@id/adcontainer"
+                style="@style/TitleStyle"
+                android:text="All Movies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/allmovies"
+                android:layout_below="@+id/txtmovie"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_item_height"/>
+            <FrameLayout
+                android:layout_below="@id/allmovies"
+                android:id="@+id/adcontainer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/txtseries"
+                android:layout_below="@id/adcontainer2"
+                style="@style/TitleStyle"
+                android:text="All Series"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/allseries"
+                android:layout_below="@+id/txtseries"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_item_height"/>
+            <FrameLayout
+                android:layout_below="@id/allseries"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/adcontainer3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>
