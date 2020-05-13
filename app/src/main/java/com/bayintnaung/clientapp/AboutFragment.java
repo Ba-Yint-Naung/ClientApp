@@ -31,7 +31,7 @@ public class AboutFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        myView = inflater.inflate(R.layout.fragment_about, container, false);
+        myView = inflater.inflate(R.layout.fragment_about, container,false);
         GoogleAds googleAds=new GoogleAds();
         googleAds.loadAdVerticalAds(myView,getContext(),getActivity());
         return myView;
